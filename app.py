@@ -6,7 +6,7 @@ from flask import Flask, request, jsonify, render_template_string
 app = Flask(__name__)
 
 # UPDATED: Matches your unique file signature name
-MODEL_PATH = "model.pkl"
+MODEL_PATH = "Gradiantmodel.pkl"
 if os.path.exists(MODEL_PATH):
     with open(MODEL_PATH, "rb") as f:
         model = pickle.load(f)
